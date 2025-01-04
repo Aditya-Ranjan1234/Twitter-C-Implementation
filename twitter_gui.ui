@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.2"/>
+  <object class="GtkWindow" id="window_feed">
+    <property name="can-focus">False</property>
+    <property name="title">Get Feed</property>
+    <child>
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkEntry" id="entry_feed_id">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">User ID</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_feed">
+            <property name="label">Get Feed</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_get_feed" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_feed">
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_back_feed">
+            <property name="label">Back</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_back" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_follow">
+    <property name="can-focus">False</property>
+    <property name="title">Follow User</property>
+    <child>
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkEntry" id="entry_follower_id">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">Follower ID</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_followee_id">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">Followee ID</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_follow">
+            <property name="label">Follow</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_follow_user" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_back_follow">
+            <property name="label">Back</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_back" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_post">
+    <property name="can-focus">False</property>
+    <property name="title">Post Tweet</property>
+    <child>
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkEntry" id="entry_id">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">User ID</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_name">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">User Name</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_tweet_id">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">Tweet ID</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entry_message">
+            <property name="can-focus">False</property>
+            <property name="placeholder-text">Tweet Message</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_post">
+            <property name="label">Post Tweet</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_post_tweet" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">4</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_status">
+            <property name="can-focus">False</property>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">5</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_back">
+            <property name="label">Back</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_back" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">6</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkWindow" id="window_welcome">
+    <property name="can-focus">False</property>
+    <property name="title">Twitter Welcome</property>
+    <child>
+      <object class="GtkBox">
+        <property name="can-focus">False</property>
+        <property name="orientation">vertical</property>
+        <child>
+          <object class="GtkButton" id="button_post_tweet">
+            <property name="label">Post Tweet</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_welcome_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_follow_user">
+            <property name="label">Follow User</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_welcome_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_get_feed">
+            <property name="label">Get Feed</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_welcome_button_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">2</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="button_exit">
+            <property name="label">Exit</property>
+            <property name="can-focus">False</property>
+            <property name="receives-default">False</property>
+            <signal name="clicked" handler="on_exit" swapped="no"/>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="fill">True</property>
+            <property name="position">3</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
